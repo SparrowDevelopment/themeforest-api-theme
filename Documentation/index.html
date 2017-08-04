@@ -1,0 +1,2166 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <!--[if IE]>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    
+	<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+    <!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+    <!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+    <!--[if (gt IE 7)|!(IE)]><!-->
+    <!--<![endif]-->
+    
+    <!-- META DATA -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    
+    <!-- Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="a template by API Docs" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Pixxett" />
+    <meta name="copyright" content="Pixxett" />
+
+    
+    <title>API Docs Comprehensive HTML Responsive - Documentation</title>
+    
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CAldrich%7CRaleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' media='all' />
+    
+    <!-- CSS Style -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    
+</head>
+<body>
+    <header id="header">
+        <!-- Navigation Start -->
+        <ul id="main_navigation">
+            <li><a class="trigger active" href="#start">Start</a></li>
+            <li><a class="trigger" href="#structure">Structure</a></li>
+            <li><a class="trigger" href="#style">CSS</a></li>
+            <li><a class="trigger" href="#theme-header">Header </a></li>
+            <li><a class="trigger" href="#sidebar">Sidebar</a></li>
+            <li><a class="trigger" href="#content">Content</a> </li>
+            <li><a class="trigger" href="#code">Code</a> </li>
+            <li><a class="trigger" href="#javascript">JS & Credits</a></li>
+        </ul>
+        <!-- Navigation End -->
+    
+    	<a class="logo" href="#"><img src="images/logo.png" alt="API Docs" /></a>
+    </header>
+    <div id="page_wrapper">
+        <section id="start">
+            <div class="row">
+                <h1>API Docs Documentation</h1>
+                <p>
+                    <span class="bold">Created:</span> 10.05.2017<br />
+                    <span class="bold">By:</span> Pixxett<br />
+                    <span class="bold">eMail:</span> <a href="mailto:support@pixxett.com">support@pixxett.com</a>
+                </p>
+                <p class="max-width">
+                	Thank you for purchasing our template. If you have any questions that are beyond the scope of this help file, please feel free to write us an email.<!-- or contact us via our themeforest user page.-->
+                </p>
+                <a class="button" href="mailto:support@pixxett.com">Support via eMail</a>
+            </div>
+        </section>
+        
+        <section id="structure">
+            <div class="row">
+                <h1>HTML Structure</h1>
+                <h2>Basic Structure</h2>
+              <p class="max-width">
+                	The Basic Structure contains:<br />
+                    &lt;body><br />
+                    	&nbsp;&nbsp;&nbsp;&nbsp; &lt;header><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class="dl-menu">&lt;/ul><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class="main_menu">&lt;/ul><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - logo, Main Text<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;/header><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;section id="section-id">&lt;/section> - all the content<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;footer>&lt;/footer> - copy rights & social-icons<br />
+                    &lt;/body>
+                </p>
+                <pre class="prettyprint">
+&lt;!-- Start Page Loading --&gt;
+  &lt;div class=&quot;loading&quot;&gt;&lt;img src=&quot;img/loading.gif&quot; alt=&quot;loading-img&quot;&gt;&lt;/div&gt;
+  &lt;!-- End Page Loading --&gt;
+  &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+  &lt;!-- START TOP --&gt;
+  &lt;div id=&quot;top&quot; class=&quot;clearfix&quot;&gt;
+
+    &lt;!-- Start App Logo --&gt;
+    &lt;div class=&quot;applogo&quot;&gt;
+      &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;API &lt;span&gt;Docs&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- End App Logo --&gt;
+
+    &lt;!-- Start Sidebar Show Hide Button --&gt;
+    &lt;a href=&quot;javascript:void(0);&quot; class=&quot;sidebar-open-button&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;javascript:void(0);&quot; class=&quot;sidebar-open-button-mobile&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;!-- End Sidebar Show Hide Button --&gt;
+
+    &lt;!-- Start Searchbox --&gt;
+    &lt;form class=&quot;searchform&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;searchbox&quot; id=&quot;searchbox&quot; placeholder=&quot;Search&quot;&gt;
+      &lt;span class=&quot;searchbutton&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/form&gt;
+    &lt;!-- End Searchbox --&gt;
+
+    &lt;!-- Start Top Menu --&gt;
+    &lt;ul class=&quot;topmenu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Files&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Authors&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;javascript:void(0);&quot; data-toggle=&quot;dropdown&quot; class=&quot;dropdown-toggle&quot;&gt;My Files &lt;span
+                class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Blog Posts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;!-- End Top Menu --&gt;
+
+  &lt;/div&gt;
+  &lt;!-- END TOP --&gt;
+  &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+
+
+  &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+  &lt;!-- START SIDEBAR --&gt;
+  &lt;div class=&quot;sidebar clearfix&quot;&gt;
+    &lt;div id=&quot;documenter_sidebar&quot;&gt;
+      &lt;div id=&quot;scrollholder&quot; class=&quot;scrollholder&quot;&gt;
+        &lt;div id=&quot;scroll&quot; class=&quot;scroll&quot;&gt;
+          &lt;ol id=&quot;documenter_nav&quot; class=&quot;sidebar-panel nav&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;current&quot; href=&quot;#documenter-1&quot;&gt;API Reference&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-2&quot;&gt;Authentication &lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-3&quot;&gt;Errors &lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-3-1&quot;&gt;Handling errors&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-4-1&quot;&gt;Tpography&lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-1&quot;&gt;General&lt;/a&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-2&quot;&gt;Headings&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-3&quot;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-4&quot;&gt;Inline Text Elements&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-5&quot;&gt;Abbrevations &amp; Addresses&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-6&quot;&gt;List Types&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-7&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-8&quot;&gt;Descriptions&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-5-1&quot;&gt;Tables&lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-1&quot;&gt;Default Talbe&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-2&quot;&gt;examplesd Rows&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-3&quot;&gt;Bordered Table&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-4&quot;&gt;Contextual Classes&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ul class=&quot;sidebar-panel nav&quot;&gt;
+            &lt;li class=&quot;sidetitle&quot;&gt;MORE&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 5&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;!-- END SIDEBAR --&gt;
+  &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+
+  &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+  &lt;!-- START CONTENT --&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;!-- Start Page Header --&gt;
+    &lt;div class=&quot;page-header&quot;&gt;
+      &lt;h1 class=&quot;title&quot;&gt;API Reference&lt;/h1&gt;
+      &lt;div class=&quot;discription&quot;&gt;
+        &lt;span class=&quot;active&quot;&gt;Lorem ipsum dolor set amet.&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End Page Header --&gt;
+
+    &lt;!-- START CONTAINER --&gt;
+    &lt;div class=&quot;container-widget&quot;&gt;
+      &lt;!-- Start Top Stats --&gt;
+      &lt;div class=&quot;col-md-12&quot;&gt;
+        &lt;div id=&quot;documenter_content&quot; class=&quot;method-area-wrapper&quot;&gt;
+          &lt;div id=&quot;documenter-1&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur &lt;a href=&quot;#&quot;&gt;ELIT&lt;/a&gt;. Nam in nisi
+                    eros. Proin quis ultricies neque. Proin imperdiet leo a leo euismod
+                    ultrices. Cras et tempor elit. Duis aliquet volutpat sapien, eget porta tellus
+                    laoreet in. Donec sem velit, tincidunt eu sodales vel, varius non libero.
+                    Sed nisl mauris,&lt;a href=&quot;#&quot;&gt; facilisis sit amet hendrerit at&lt;/a&gt;, hendrerit
+                    vel tortor. Aliquam id massa euismod, ultricies metus nec, convallis urna. In
+                    laoreet dapibus ante vitae placerat. Pellentesque mollis nec sapien
+                    elementum eu tincidunt. &lt;a href=&quot;#&quot;&gt;SAPIEN&lt;/a&gt; elit placerat Phasellus laoreet vitae,
+                    Cras in massa ac mi sodales &lt;a href=&quot;#&quot;&gt;Ligula Fermentum&lt;/a&gt; vestibulum
+                    et rutrum odio tincidunt. Nunc id maximus orci.
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    Vestibulum mollis eros nunc, pretium porta dolor gravida vel. Nullam arcu diam,
+                    semper a varius sit amet, interdum vel enim. Duis orci nunc, eleifend vel tellus
+                    ut, finibus fermentum erat. Curabitur sagittis justo augue. Phasellus fermentum
+                    semper nisi, in consequat lectus tincidunt quis. Maecenas sit amet semper.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;method-example&quot;&gt;
+                &lt;div class=&quot;method-example-part&quot;&gt;
+                  &lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+                  &lt;p&gt;Curabitur lacinia convallis nibh, &lt;a href=&quot;#&quot;&gt;non cursus augue&lt;/a&gt;. Quisque id
+                    sem id lorem porttitor efficitur in quis libero. Nullam turpis ante auctor &lt;a href=&quot;#&quot;&gt;purus sed&lt;/a&gt;.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;method-example-part&quot;&gt;
+                  &lt;div class=&quot;method-example-endpoint&quot;&gt;
+                                        &lt;pre class=&quot; language-none&quot;&gt;&lt;code
+                                                class=&quot; language-none&quot;&gt;https://examples.com&lt;/code&gt;&lt;/pre&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-2&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+                  &lt;p&gt;
+                    In laoreet dapibus ante vitae placerat. Pellentesque mollis sapien nec sapien elementum, eu
+                    tincidunt elit placerat. Phasellus &lt;a href=&quot;#&quot;&gt;VITAE&lt;/a&gt; mi at hendrerit. Cras in massa ac mi
+                    sodales vestibulum. Etiam convallis lectus vitae ligula fermentum, et rutrum odio tincidunt. Nunc id
+                    maximus orci. Sed id sapien massa, massa ad os.
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    Pellentesque nunc eros, vulputac &lt;code&gt;example.Key&lt;/code&gt;. Phasellus urna dui, sollicitudin nec
+                    rutrum sollicitudin nec rutrum eros.
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    Pellentesque nunc eros, vulputac &lt;code&gt;example.Key&lt;/code&gt;. Phasellus urna dui, sollicitudin nec
+                    rutrum sollicitudin nec rutrum eros.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;method-example&quot;&gt;
+                &lt;div class=&quot;code-curl code-div active-code&quot;&gt;
+                  &lt;div class=&quot;method-example-part&quot;&gt;
+                    &lt;div class=&quot;method-example-request include-prompt&quot;&gt;&lt;pre
+                            class=&quot; language-bash&quot;&gt;&lt;code class=&quot; language-bash&quot;&gt;curl
+                      https://examples.com/v1/charges \
+                      &lt;span class=&quot;token api-key&quot;&gt;&lt;span class=&quot;token request-flag&quot;&gt;-u&lt;/span&gt; ex_HYUkikJOvBiI2Hsf45sf786h4d&lt;/span&gt;:
+                    &lt;/code&gt;&lt;/pre&gt;
+                    &lt;/div&gt;
+                    &lt;p&gt;
+                      curl uses the &lt;code class=&quot; language-undefined&quot;&gt;-u&lt;/code&gt; flag to pass basic
+                      auth credentials (adding a colon after your API key prevents cURL from
+                      asking for a password).
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      A sample test API key is included in all the examples on this page, so you
+                      can test any example right away. To test requests using your account,
+                      replace the sample API key with your actual API key.
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-3&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;h3&gt;Lorem&lt;/h3&gt;
+                  &lt;p&gt;
+                    In laoreet dapibus ante vitae placerat. Pellentesque mollis
+                    sapien nec sapien elementum, eu tincidunt elit placerat.
+                    Phasellus &lt;code class=&quot; language-undefined&quot;&gt;2xx&lt;/code&gt;laoreet vitae mi at hendrerit. Cras in jni
+                    &lt;code class=&quot; language-undefined&quot;&gt;4xx&lt;/code&gt;lectus vitae ligula fermentum, et rutrum odio
+                    sit amet, interdum vel enim. Duis orci nunc, eleifend
+                    vel tellus ut, finibus fermentum erat. Curabitur &lt;code class=&quot; language-undefined&quot;&gt;5xx&lt;/code&gt;
+                    in consequat lectus tincidunt quis. Maecenas sit amet semper nisl.
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                    In laoreet dapibus ante vitae placerat. Pellentesque
+                    mollis sapien nec sapien elementum, eu tincidunt elit
+                    placerat. Phasellus laoreet vitae mi at hendrerit. Cras
+                    in massa ac mi sodales vestibulum. Etiam convallis lectus
+                    vitae &lt;a href=&quot;/docs/declines#decline-codes&quot;&gt; ligula fermentum&lt;/a&gt;
+                    maximus orci.
+                  &lt;/p&gt;
+
+                &lt;/div&gt;
+                &lt;div class=&quot;method-list attributes&quot;&gt;
+                  &lt;h5 class=&quot;method-list-title&quot;&gt;
+                    Attributes
+                  &lt;/h5&gt;
+                  &lt;ul class=&quot;method-list-group&quot;&gt;
+                    &lt;li class=&quot;method-list-item&quot; id=&quot;errors-type&quot;&gt;
+                      &lt;h3 class=&quot;method-list-item-label&quot;&gt;&lt;a href=&quot;#errors-type&quot;
+                                                            class=&quot;header-anchor&quot;&gt;&lt;/a&gt;
+                        type
+                      &lt;/h3&gt;
+                      &lt;p class=&quot;method-list-item-description&quot;&gt;
+                        The type of error returned. Can be: &lt;code
+                              class=&quot; language-undefined&quot;&gt;api_connection_error&lt;/code&gt;,
+                        &lt;code class=&quot; language-undefined&quot;&gt;api_error&lt;/code&gt;, &lt;code
+                              class=&quot; language-undefined&quot;&gt;authentication_error&lt;/code&gt;, &lt;code
+                              class=&quot; language-undefined&quot;&gt;card_error&lt;/code&gt;, &lt;code
+                              class=&quot; language-undefined&quot;&gt;invalid_request_error&lt;/code&gt;, or &lt;code
+                              class=&quot; language-undefined&quot;&gt;rate_limit_error&lt;/code&gt;.
+                      &lt;/p&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class=&quot;method-list-item&quot; id=&quot;errors-message&quot;&gt;
+                      &lt;h3 class=&quot;method-list-item-label&quot;&gt;&lt;a href=&quot;#errors-message&quot;
+                                                            class=&quot;header-anchor&quot;&gt;&lt;/a&gt;
+                        message
+                        &lt;span class=&quot;method-list-item-label-details&quot;&gt;optional&lt;/span&gt;
+                      &lt;/h3&gt;
+                      &lt;p class=&quot;method-list-item-description&quot;&gt;
+                        Nunc suscipit justo ac odio condimentum malesuada Nunc suscipit justo ac odio
+                        condimentum malesuada Nunc suscipit justo ac odio.
+                      &lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;method-list-item&quot; id=&quot;errors-code&quot;&gt;
+                      &lt;h3 class=&quot;method-list-item-label&quot;&gt;&lt;a href=&quot;#errors-code&quot;
+                                                            class=&quot;header-anchor&quot;&gt;&lt;/a&gt;
+                        code
+                        &lt;span class=&quot;method-list-item-label-details&quot;&gt;optional&lt;/span&gt;
+                      &lt;/h3&gt;
+                      &lt;p class=&quot;method-list-item-description&quot;&gt;
+                        Nunc suscipit justo ac odio condimentum malesuada Nunc suscipit justo ac odio
+                        condimentum malesuada Nunc suscipit justo ac odio.
+                      &lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;method-list-item&quot; id=&quot;errors-decline-code&quot;&gt;
+                      &lt;h3 class=&quot;method-list-item-label&quot;&gt;&lt;a href=&quot;#errors-decline-code&quot;
+                                                            class=&quot;header-anchor&quot;&gt;&lt;/a&gt;
+                        decline_code
+                        &lt;span class=&quot;method-list-item-label-details&quot;&gt;optional&lt;/span&gt;
+                      &lt;/h3&gt;
+                      &lt;p class=&quot;method-list-item-description&quot;&gt;
+                        Nunc suscipit justo ac odio condimentum malesuada Nunc suscipit justo ac odio
+                        &lt;a href=&quot;/docs/declines#bank-declines&quot;&gt;condimentum malesuada Nunc &lt;/a&gt;
+                        suscipit justo ac odio.
+                      &lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;method-list-item&quot; id=&quot;errors-param&quot;&gt;
+                      &lt;h3 class=&quot;method-list-item-label&quot;&gt;&lt;a href=&quot;#errors-param&quot;
+                                                            class=&quot;header-anchor&quot;&gt;&lt;/a&gt;
+                        param
+                        &lt;span class=&quot;method-list-item-label-details&quot;&gt;optional&lt;/span&gt;
+                      &lt;/h3&gt;
+                      &lt;p class=&quot;method-list-item-description&quot;&gt;
+                        Nunc suscipit justo ac odio condimentum malesuada Nunc suscipit justo.
+                        ac odio Nunc suscipit justo ac odio condimentum malesuada Nunc suscipit
+                        justo.
+                      &lt;/p&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;method-example&quot;&gt;
+                &lt;div class=&quot;method-example-part&quot;&gt;
+                  &lt;h3&gt;Errors&lt;/h3&gt;
+                  &lt;div class=&quot;table table-responsive&quot;&gt;
+                    &lt;header class=&quot;table-header&quot; id=&quot;error-types&quot;&gt; Types&lt;/header&gt;
+                    &lt;table class=&quot;table-container&quot;&gt;
+                      &lt;colgroup&gt;
+                        &lt;col class=&quot;col-md-3&quot;&gt;
+                        &lt;col class=&quot;col-md-9&quot;&gt;
+                      &lt;/colgroup&gt;
+                      &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;api_connection_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;api_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien.
+                          Pellentesque mollis sapien nec sapien. Pellentesque mollis sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;authentication_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien.
+                          Pellentesque mollis sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;card_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien Pellentesque mollis
+                          sapien nec sapien Pellentesque mollis sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;invalid_request_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien Pellentesque mollis
+                          sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;rate_limit_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th class=&quot;table-row-property&quot;&gt;validation_error&lt;/th&gt;
+                        &lt;td class=&quot;table-row-definition&quot;&gt;Pellentesque mollis sapien nec sapien
+                          Pellentesque mollis sapien nec sapien Pellentesque mollis sapien nec sapien
+                          Pellentesque mollis sapien nec sapien Pellentesque mollis sapien nec sapien.
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-3-1&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;h3 id=&quot;handling-errors&quot;&gt;Lorem Ipsum&lt;/h3&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id justo aliquam, rutrum urna in,
+                    facilisis metus. Phasellus nec interdum nulla. Vestibulum pharetra urna neque. Nam sit amet dolor et
+                    enim pretium ultrices. Ut ac elit vitae magna efficitur rhoncus.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;method-example&quot;&gt;
+                &lt;div class=&quot;code-php code-div active-code&quot;&gt;
+                  &lt;div class=&quot;method-example-part&quot;&gt;
+                &lt;pre class=&quot; language-php&quot;&gt;&lt;code
+                        class=&quot; language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span
+                        class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Use examples's library to make requests...&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;\&lt;span class=&quot;token package&quot;&gt;examples&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Card&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Since it's a decline, \examples\Error\Card will be caught&lt;/span&gt;
+                  &lt;span class=&quot;token variable&quot;&gt;$body&lt;/span&gt; &lt;span
+                          class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span
+                          class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getJsonBody&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt; &lt;span
+                          class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$body&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span
+                          class=&quot;token string&quot;&gt;'error'&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Status is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span
+                          class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getHttpStatus&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Type is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$err&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span
+                          class=&quot;token string&quot;&gt;'type'&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Code is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$err&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span
+                          class=&quot;token string&quot;&gt;'code'&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                                            &lt;span class=&quot;token comment&quot;
+                                                  spellcheck=&quot;true&quot;&gt;// param is '' in this case&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Param is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$err&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span
+                          class=&quot;token string&quot;&gt;'param'&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Message is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$err&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'message'&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span
+                          class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;RateLimit&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Too many requests made to the API too quickly&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;InvalidRequest&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot;
+                        spellcheck=&quot;true&quot;&gt;// Invalid parameters were supplied to examples's API&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Authentication&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Authentication with examples's API failed&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// (maybe you changed API keys recently)&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;ApiConnection&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Network communication with examples failed&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span
+                          class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error&lt;span
+                          class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Base&lt;/span&gt; &lt;span
+                          class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Display a very generic error to the user, and maybe send&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// yourself an email&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span
+                          class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Exception&lt;/span&gt;
+                  &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;&lt;span
+                          class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span
+                          class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Something else happened, completely unrelated to examples&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+
+          &lt;div id=&quot;documenter-4-1&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;h3&gt;Typography&lt;/h3&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt;General&lt;/div&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;div class=&quot;col-md-6 padding-l-0&quot;&gt;
+                      &lt;h4&gt;Google Web Fonts&lt;/h4&gt;
+                      &lt;p&gt;Kode using &lt;a href=&quot;https://www.google.com/fonts&quot; target=&quot;_blank&quot;&gt;Google Web Font&lt;/a&gt;. You can
+                        change your fonts only editing one line code.&lt;/p&gt;
+
+                      &lt;h4 class=&quot;margin-t-40&quot;&gt;General Font&lt;/h4&gt;
+                      &lt;p&gt;Kode using general font as &lt;strong&gt;Open Sans&lt;/strong&gt;.&lt;/p&gt;
+                      &lt;div class=&quot;color1&quot; style=&quot;font-size:20px;&quot;&gt;
+                        &lt;p class=&quot;font-w-300&quot;&gt;Open Sans Light 300&lt;/p&gt;
+                        &lt;p class=&quot;font-w-300&quot;&gt;&lt;em&gt;Open Sans Light 300 Italic&lt;/em&gt;&lt;/p&gt;
+                        &lt;p class=&quot;font-w-400&quot;&gt;Open Sans Normal 400&lt;/p&gt;
+                        &lt;p class=&quot;font-w-400&quot;&gt;&lt;em&gt;Open Sans Normal 400 Italic&lt;/em&gt;&lt;/p&gt;
+                        &lt;p class=&quot;font-w-600&quot;&gt;Open Sans Semi-Bold 600&lt;/p&gt;
+                        &lt;p class=&quot;font-w-600&quot;&gt;&lt;em&gt;Open Sans Semi-Bold 600 Italic&lt;/em&gt;&lt;/p&gt;
+                        &lt;p class=&quot;font-w-700&quot;&gt;Open Sans Bold 700&lt;/p&gt;
+                        &lt;p class=&quot;font-w-700&quot;&gt;&lt;em&gt;Open Sans Bold 700 Italic&lt;/em&gt;&lt;/p&gt;
+                        &lt;p class=&quot;font-w-800&quot;&gt;Open Sans Extra-Bold 800&lt;/p&gt;
+                        &lt;p class=&quot;font-w-800&quot;&gt;&lt;em&gt;Open Sans Extra-Bold 800 Italic&lt;/em&gt;&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                      &lt;h4&gt;General Options&lt;/h4&gt;
+                      &lt;p&gt;We set it line height as &lt;b&gt;1.7em&lt;/b&gt; and default font size as &lt;b&gt;13px&lt;/b&gt;&lt;/p&gt;
+                      &lt;h4 class=&quot;margin-t-40&quot;&gt;Basic Colors&lt;/h4&gt;
+                      &lt;p class=&quot;clearfix&quot;&gt;
+                        &lt;span class=&quot;colorstheme color1-bg&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;colorstheme color2-bg&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;colorstheme color3-bg&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;colorstheme color4-bg&quot;&gt;&lt;/span&gt;
+                      &lt;/p&gt;
+                      &lt;h4 class=&quot;margin-t-40&quot;&gt;Title Font&lt;/h4&gt;
+                      &lt;p&gt;Title font is Montserrat. You can add anything as &lt;code&gt;.font-title&lt;/code&gt;&lt;/p&gt;
+                      &lt;div class=&quot;color1&quot; style=&quot;font-size:20px;&quot;&gt;
+                        &lt;p class=&quot;font-w-400 font-title&quot;&gt;Montserrat Normal 400&lt;/p&gt;
+                        &lt;p class=&quot;font-w-700 font-title&quot;&gt;Montserrat Bold 700&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-4-2&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt;Headings&lt;/div&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;div class=&quot;col-md-6  padding-l-0&quot;&gt;
+                      &lt;h4&gt;Default&lt;/h4&gt;
+                      &lt;p&gt;All HTML headings, &lt;code&gt;&lt;h1&gt;&lt;/code&gt; through &lt;code&gt;&lt;h6&gt;&lt;/code&gt;, are available.
+                        &lt;code&gt;.h1&lt;/code&gt; through &lt;code&gt;.h6&lt;/code&gt; classes are also available, for when you want to match
+                        the font styling of a heading but still want your text to be displayed inline.&lt;/p&gt;
+                      &lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+                      &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
+                      &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
+                      &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
+                      &lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;
+                      &lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-md-6 padding-0&quot;&gt;
+                      &lt;h4&gt;Headings with secondary text&lt;/h4&gt;
+                      &lt;p&gt;Create lighter, secondary text in any heading with a generic &lt;code&gt;&lt;small&gt;&lt;/code&gt; tag or
+                        the &lt;code&gt;.small&lt;/code&gt; class.&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+                      &lt;h1&gt;h1. Bootstrap heading
+                        &lt;small&gt;Secondary text&lt;/small&gt;
+                      &lt;/h1&gt;
+                      &lt;h2&gt;h2. Bootstrap heading
+                        &lt;small&gt;Secondary text&lt;/small&gt;
+                      &lt;/h2&gt;
+                      &lt;h3&gt;h3. Bootstrap heading
+                        &lt;small&gt;Secondary text&lt;/small&gt;
+                      &lt;/h3&gt;
+                      &lt;h4&gt;h4. Bootstrap heading
+                        &lt;small&gt;Secondary text&lt;/small&gt;
+                      &lt;/h4&gt;
+                      &lt;h5&gt;h5. Bootstrap heading
+                        &lt;small&gt;Secondary text&lt;/small&gt;
+                      &lt;/h5&gt;
+                      &lt;h6&gt;h6. Bootstrap heading
+                        &lt;small&gt;Secondary text&lt;/small&gt;
+                      &lt;/h6&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-4-3&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt;Paragraph&lt;/div&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;div class=&quot;col-md-6 padding-l-0&quot;&gt;
+                      &lt;h4&gt;Basic&lt;/h4&gt;
+                      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra metus a augue
+                        pellentesque aliquet. Duis id elit dolor. Pellentesque gravida molestie egestas. Phasellus neque
+                        leo, fermentum at lobortis nec, efficitur in ante.&lt;/p&gt;
+
+                      &lt;p&gt;Vestibulum enim diam, facilisis eu luctus vel, rhoncus in lectus. Vestibulum faucibus nec elit
+                        sed mollis. Vestibulum convallis tellus quis dictum convallis. Vivamus euismod nunc ut dolor
+                        finibus, eget gravida eros porta. Suspendisse eu lorem vel ex iaculis venenatis a ut lorem. &lt;/p&gt;
+
+                      &lt;p&gt;Vestibulum sed vestibulum neque, sed vehicula lectus. Nam a diam sollicitudin, gravida nisi
+                        quis, ultrices dolor. Vestibulum viverra dignissim mollis. Morbi consectetur rhoncus augue nec
+                        maximus. Quisque aliquam lacinia metus, a iaculis magna fringilla et. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.&lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-md-6 padding-0&quot;&gt;
+                      &lt;h4&gt;Headings with secondary text&lt;/h4&gt;
+                      &lt;p&gt;Make a paragraph stand out by adding &lt;code&gt;.lead&lt;/code&gt;.&lt;/p&gt;
+                      &lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra metus a
+                        augue pellentesque aliquet. Duis id elit dolor. Pellentesque gravida molestie egestas. Phasellus
+                        neque leo, fermentum at lobortis nec, efficitur in ante.Fusce pharetra metus a augue&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-4-4&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;col-md-6 col-sm-12 padding-l-0&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Inline text elements&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;h4&gt;Marked Text&lt;/h4&gt;
+                      &lt;p&gt;You can use the mark tag to
+                        &lt;mark&gt;highlight&lt;/mark&gt;
+                        text.
+                      &lt;/p&gt;
+
+                      &lt;h4&gt;Deleted text&lt;/h4&gt;
+                      &lt;p&gt;
+                        &lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;
+                      &lt;/p&gt;
+
+                      &lt;h4&gt;Strikethrough text&lt;/h4&gt;
+                      &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+
+                      &lt;h4&gt;Inserted text&lt;/h4&gt;
+                      &lt;p&gt;
+                        &lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;
+                      &lt;/p&gt;
+
+                      &lt;h4&gt;Underlined text&lt;/h4&gt;
+                      &lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+
+                      &lt;h4&gt;Small text&lt;/h4&gt;
+                      &lt;p&gt;
+                        &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
+                      &lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-sm-12 padding-r-0&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Alignment and Transformation&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;h4&gt;Alignment classes&lt;/h4&gt;
+                      &lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;
+                      &lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;
+                      &lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;
+                      &lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;
+                      &lt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;
+                      &lt;h4&gt;Transformation classes&lt;/h4&gt;
+                      &lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;
+                      &lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;
+                      &lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-4-5&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;col-md-6 col-sm-12 padding-l-0&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Abbreviations&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;p&gt;Nunc suscipit justo ac odio condimentum &lt;code&gt;&lt;abbr&gt;&lt;/code&gt; malesuada. Duis lacinia
+                        blandit egestas. Donec non dui sit amet magna eleifend dignissim. &lt;code&gt;title&lt;/code&gt; Integer
+                        consectetur mauris a massa malesuada venenatis. Aliquam placerat nulla non interdum venenatis.
+                        Orci varius natoque penatibus et magnis dis mus.&lt;/p&gt;
+
+                      &lt;h4&gt;Basic abbreviation&lt;/h4&gt;
+                      Nunc suscipit justo ac odio condimentum &lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;
+
+                      &lt;h4&gt;Initialism&lt;/h4&gt;
+                      &lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt; Nunc suscipit justo ac odio
+                      condimentum.
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-6 col-sm-12 padding-r-0&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; ADDRESSES&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;address&gt;
+                        &lt;strong&gt;Sollicitudin nisi sollicitudin.&lt;/strong&gt;&lt;br&gt;
+                        692 Merry Poe Avenisl, malesuada 201&lt;br&gt;
+                        Duis lacinia, EF 1131&lt;br&gt;
+                        &lt;abbr title=&quot;Phone&quot;&gt;P:&lt;/abbr&gt; (123) 456-7890
+                      &lt;/address&gt;
+
+                      &lt;address&gt;
+                        &lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
+                        &lt;a href=&quot;mailto:#&quot;&gt;first.last@example.com&lt;/a&gt;
+                      &lt;/address&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;documenter-4-6&quot; class=&quot;method row&quot;&gt;
+            &lt;div class=&quot;col-lg-3 col-md-6&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Unordered List&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;ul&gt;
+                        &lt;li&gt;Home&lt;/li&gt;
+                        &lt;li&gt;About Us&lt;/li&gt;
+                        &lt;li&gt;Works&lt;/li&gt;
+                        &lt;li&gt;Jobs
+                          &lt;ul&gt;
+                            &lt;li&gt;Designer&lt;/li&gt;
+                            &lt;li&gt;Front-end Developer&lt;/li&gt;
+                            &lt;li&gt;IOS Developer&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;Contact&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-3 col-md-6&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Ordered List&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;ol&gt;
+                        &lt;li&gt;Home&lt;/li&gt;
+                        &lt;li&gt;About Us&lt;/li&gt;
+                        &lt;li&gt;Works&lt;/li&gt;
+                        &lt;li&gt;Jobs
+                          &lt;ol&gt;
+                            &lt;li&gt;Designer&lt;/li&gt;
+                            &lt;li&gt;Front-end Developer&lt;/li&gt;
+                            &lt;li&gt;IOS Developer&lt;/li&gt;
+                          &lt;/ol&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;Contact&lt;/li&gt;
+                      &lt;/ol&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-3 col-md-6&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Unstyled List&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;ul class=&quot;list-unstyled&quot;&gt;
+                        &lt;li&gt;Home&lt;/li&gt;
+                        &lt;li&gt;About Us&lt;/li&gt;
+                        &lt;li&gt;Works&lt;/li&gt;
+                        &lt;li&gt;Jobs
+                          &lt;ul&gt;
+                            &lt;li&gt;Designer&lt;/li&gt;
+                            &lt;li&gt;Front-end Developer&lt;/li&gt;
+                            &lt;li&gt;IOS Developer&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;Contact&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-3 col-md-6&quot;&gt;
+              &lt;div class=&quot;method-area&quot;&gt;
+                &lt;div class=&quot;method-copy&quot;&gt;
+                  &lt;div class=&quot;method-copy-padding&quot;&gt;
+                    &lt;div class=&quot;panel-title&quot;&gt; Inline List&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                      &lt;ul class=&quot;list-inline&quot;&gt;
+                        &lt;li&gt;Home&lt;/li&gt;
+                        &lt;li&gt;Works&lt;/li&gt;
+                        &lt;li&gt;Jobs&lt;/li&gt;
+                        &lt;li&gt;Contact&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;documenter-4-7&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt; Blockquotes&lt;/div&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;h4&gt;Default blockquote&lt;/h4&gt;
+                    &lt;blockquote&gt;
+                      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                    &lt;/blockquote&gt;
+
+                    &lt;h4&gt;Naming a source&lt;/h4&gt;
+                    &lt;blockquote&gt;
+                      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                      &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+                    &lt;/blockquote&gt;
+
+                    &lt;h4&gt;Alternate displays&lt;/h4&gt;
+                    &lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
+                      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                      &lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+                    &lt;/blockquote&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;documenter-4-8&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt; Descriptions&lt;/div&gt;
+                  &lt;div class=&quot;panel-body&quot;&gt;
+                    &lt;div class=&quot;col-md-6 padding-l-0&quot;&gt;
+                      &lt;h4&gt;Normal&lt;/h4&gt;
+                      &lt;dl&gt;
+                        &lt;dt&gt;Donec lobortis justo at aliquet&lt;/dt&gt;
+                        &lt;dd&gt;Sed tincidunt pharetra ante, tempus imperdiet elit sodales id. Donec lobortis justo at
+                          aliquet luctus. Praesent interdum massa sed ex efficitur, vitae dignissim ante pharetra
+                        &lt;/dd&gt;
+                        &lt;dt&gt;Tempus imperdiet elit&lt;/dt&gt;
+                        &lt;dd&gt;Sed tincidunt pharetra ante, tempus imperdiet elit sodales id. Donec lobortis justo at
+                          aliquet luctus. Praesent interdum massa sed ex efficitur, vitae dignissim ante pharetra
+                        &lt;/dd&gt;
+                        &lt;dt&gt;Praesent interdum&lt;/dt&gt;
+                        &lt;dd&gt;Sed tincidunt pharetra ante, tempus imperdiet elit sodales id. Donec lobortis justo at
+                          aliquet luctus. Praesent interdum massa sed ex efficitur, vitae dignissim ante pharetra
+                        &lt;/dd&gt;
+                      &lt;/dl&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-md-6 padding-0&quot;&gt;
+                      &lt;h4&gt;Horizontal&lt;/h4&gt;
+                      &lt;dl class=&quot;dl-horizontal&quot;&gt;
+                        &lt;dt&gt;Donec lobortis justo at aliquet&lt;/dt&gt;
+                        &lt;dd&gt;Sed tincidunt pharetra ante, tempus imperdiet elit sodales id. Donec lobortis justo at
+                          aliquet luctus. Praesent interdum massa sed ex efficitur, vitae dignissim ante pharetra
+                        &lt;/dd&gt;
+                        &lt;dt&gt;Tempus imperdiet elit&lt;/dt&gt;
+                        &lt;dd&gt;Sed tincidunt pharetra ante, tempus imperdiet elit sodales id. Donec lobortis justo at
+                          aliquet luctus. Praesent interdum massa sed ex efficitur, vitae dignissim ante pharetra
+                        &lt;/dd&gt;
+                        &lt;dt&gt;Praesent interdum&lt;/dt&gt;
+                        &lt;dd&gt;Sed tincidunt pharetra ante, tempus imperdiet elit sodales id. Donec lobortis justo at
+                          aliquet luctus. Praesent interdum massa sed ex efficitur, vitae dignissim ante pharetra
+                        &lt;/dd&gt;
+                      &lt;/dl&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;documenter-5-1&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;h3&gt;Basic Tables&lt;/h3&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt; Default Table&lt;/div&gt;
+                  &lt;div class=&quot;panel-body table-responsive&quot;&gt;
+                    &lt;p&gt;For basic styling—light padding and only horizontal dividers—add the base class
+                      &lt;code&gt;.table&lt;/code&gt; to any &lt;code&gt;&lt;table&gt;&lt;/code&gt;. It may seem super redundant, but given the
+                      widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate
+                      our custom table styles.&lt;/p&gt;
+                    &lt;table class=&quot;table table-hover&quot;&gt;
+                      &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;&lt;i class=&quot;fa fa-trash&quot;&gt;&lt;/i&gt;&lt;/td&gt;
+                        &lt;td&gt;Order ID&lt;/td&gt;
+                        &lt;td&gt;Product&lt;/td&gt;
+                        &lt;td&gt;Buyer&lt;/td&gt;
+                        &lt;td&gt;Date&lt;/td&gt;
+                        &lt;td&gt;Order Note&lt;/td&gt;
+                        &lt;td&gt;Payment&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;div class=&quot;checkbox margin-t-0&quot;&gt;&lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;&lt;label
+                                  for=&quot;checkbox1&quot;&gt;&lt;/label&gt;&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Kode Gaming Laptop&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size. &lt;br&gt;Finally it shrank
+                          to the size of a marble, the most beautiful you can imagine.
+                        &lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;div class=&quot;checkbox margin-t-0&quot;&gt;&lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot;&gt;&lt;label
+                                  for=&quot;checkbox2&quot;&gt;&lt;/label&gt;&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;# &lt;b&gt;1963&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;New Season Jacket&lt;/td&gt;
+                        &lt;td&gt;Jane Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size. &lt;br&gt;Finally it shrank
+                          to the size of a marble, the most beautiful you can imagine.
+                        &lt;/td&gt;
+                        &lt;td&gt;Paypal&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;div class=&quot;checkbox margin-t-0&quot;&gt;&lt;input id=&quot;checkbox3&quot; type=&quot;checkbox&quot;&gt;&lt;label
+                                  for=&quot;checkbox3&quot;&gt;&lt;/label&gt;&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;IO Mouse&lt;/td&gt;
+                        &lt;td&gt;Jonathan Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size. &lt;br&gt;Finally it shrank
+                          to the size of a marble, the most beautiful you can imagine.
+                        &lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;div class=&quot;checkbox margin-t-0&quot;&gt;&lt;input id=&quot;checkbox4&quot; type=&quot;checkbox&quot;&gt;&lt;label
+                                  for=&quot;checkbox4&quot;&gt;&lt;/label&gt;&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;# &lt;b&gt;9651&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Doe Bike&lt;/td&gt;
+                        &lt;td&gt;Jonathan Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size. &lt;br&gt;Finally it shrank
+                          to the size of a marble, the most beautiful you can imagine.
+                        &lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;div class=&quot;checkbox margin-t-0&quot;&gt;&lt;input id=&quot;checkbox5&quot; type=&quot;checkbox&quot;&gt;&lt;label
+                                  for=&quot;checkbox5&quot;&gt;&lt;/label&gt;&lt;/div&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;# &lt;b&gt;6962&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Zets Baseball Bat&lt;/td&gt;
+                        &lt;td&gt;Jonathan Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size. &lt;br&gt;Finally it shrank
+                          to the size of a marble, the most beautiful you can imagine.
+                        &lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-5-2&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt; examplesd rows&lt;/div&gt;
+                  &lt;div class=&quot;panel-body table-responsive&quot;&gt;
+                    &lt;p&gt;Use &lt;code&gt;.table-examplesd&lt;/code&gt; to add zebra-striping to any table row within the &lt;code&gt;&lt;tbody&gt;&lt;/code&gt;.
+                    &lt;/p&gt;
+
+                    &lt;table class=&quot;table table-examplesd&quot;&gt;
+                      &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Order ID&lt;/td&gt;
+                        &lt;td&gt;Product&lt;/td&gt;
+                        &lt;td&gt;Buyer&lt;/td&gt;
+                        &lt;td&gt;Date&lt;/td&gt;
+                        &lt;td&gt;Order Note&lt;/td&gt;
+                        &lt;td&gt;Payment&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div id=&quot;documenter-5-3&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt; Bordered table&lt;/div&gt;
+                  &lt;div class=&quot;panel-body table-responsive&quot;&gt;
+                    &lt;p&gt;Add &lt;code&gt;.table-bordered&lt;/code&gt; for borders on all sides of the table and cells.&lt;/p&gt;
+
+                    &lt;table class=&quot;table table-bordered table-examplesd&quot;&gt;
+                      &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Order ID&lt;/td&gt;
+                        &lt;td&gt;Product&lt;/td&gt;
+                        &lt;td&gt;Buyer&lt;/td&gt;
+                        &lt;td&gt;Date&lt;/td&gt;
+                        &lt;td&gt;Order Note&lt;/td&gt;
+                        &lt;td&gt;Payment&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;Praesent risus velit, egestas et nulla vitae, venenatis elementum nulla.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;documenter-5-4&quot; class=&quot;method&quot;&gt;
+            &lt;div class=&quot;method-area&quot;&gt;
+              &lt;div class=&quot;method-copy&quot;&gt;
+                &lt;div class=&quot;method-copy-padding&quot;&gt;
+                  &lt;div class=&quot;panel-title&quot;&gt; Contextual classes&lt;/div&gt;
+                  &lt;div class=&quot;panel-body table-responsive&quot;&gt;
+                    &lt;p&gt;Use contextual classes to color table rows or individual cells.&lt;/p&gt;
+                    &lt;table class=&quot;table table-bordered table-examplesd&quot;&gt;
+                      &lt;colgroup&gt;
+                        &lt;col class=&quot;col-xs-1&quot;&gt;
+                        &lt;col class=&quot;col-xs-7&quot;&gt;
+                      &lt;/colgroup&gt;
+                      &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th&gt;Class&lt;/th&gt;
+                        &lt;th&gt;Description&lt;/th&gt;
+                      &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;th scope=&quot;row&quot;&gt;
+                          &lt;code&gt;.active&lt;/code&gt;
+                        &lt;/th&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th scope=&quot;row&quot;&gt;
+                          &lt;code&gt;.success&lt;/code&gt;
+                        &lt;/th&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th scope=&quot;row&quot;&gt;
+                          &lt;code&gt;.info&lt;/code&gt;
+                        &lt;/th&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th scope=&quot;row&quot;&gt;
+                          &lt;code&gt;.warning&lt;/code&gt;
+                        &lt;/th&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;th scope=&quot;row&quot;&gt;
+                          &lt;code&gt;.danger&lt;/code&gt;
+                        &lt;/th&gt;
+                        &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+
+                    &lt;br&gt;
+
+                    &lt;table class=&quot;table&quot;&gt;
+                      &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Order ID&lt;/td&gt;
+                        &lt;td&gt;Product&lt;/td&gt;
+                        &lt;td&gt;Buyer&lt;/td&gt;
+                        &lt;td&gt;Date&lt;/td&gt;
+                        &lt;td&gt;Order Note&lt;/td&gt;
+                        &lt;td&gt;Payment&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                      &lt;tr class=&quot;active&quot;&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Kode Gaming Laptop&lt;/td&gt;
+                        &lt;td&gt;John Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr class=&quot;success&quot;&gt;
+                        &lt;td&gt;# &lt;b&gt;1963&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;New Season Jacket&lt;/td&gt;
+                        &lt;td&gt;Jane Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size.&lt;/td&gt;
+                        &lt;td&gt;Paypal&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr class=&quot;warning&quot;&gt;
+                        &lt;td&gt;# &lt;b&gt;9652&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;IO Mouse&lt;/td&gt;
+                        &lt;td&gt;Jonathan Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr class=&quot;danger&quot;&gt;
+                        &lt;td&gt;# &lt;b&gt;9651&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Doe Bike&lt;/td&gt;
+                        &lt;td&gt;Jonathan Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr class=&quot;info&quot;&gt;
+                        &lt;td&gt;# &lt;b&gt;6962&lt;/b&gt;&lt;/td&gt;
+                        &lt;td&gt;Zets Baseball Bat&lt;/td&gt;
+                        &lt;td&gt;Jonathan Doe&lt;/td&gt;
+                        &lt;td&gt;12/10/2015&lt;/td&gt;
+                        &lt;td&gt;As we got further and further away, it [the Earth] diminished in size.&lt;/td&gt;
+                        &lt;td&gt;Credit Card&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- END CONTAINER --&gt;
+    &lt;!-- //////////////////////////////////////////////////////////////////////////// --&gt;
+
+    &lt;!-- Start Footer --&gt;
+    &lt;div class=&quot;row footer&quot;&gt;
+      &lt;div class=&quot;col-md-6 text-left&quot;&gt;
+        Copyright © 2015 &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Pixxett&lt;/a&gt; All rights reserved.
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6 text-right&quot;&gt;
+        Design by &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;Pixxett&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End Footer --&gt;
+
+
+  &lt;/div&gt;
+  &lt;!-- End Content --&gt;
+                </pre>
+
+                <h2 class="margin-top">Column Grid</h2>
+                <p class="max-width">
+                    This is a full responsive Column Grid.
+                </p>
+                <pre class="prettyprint">
+&lt;!-- *************** 1 Column Grid *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        1/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** 2 Column Grid *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        2/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** 3 Column Grid *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        3/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** 4 Column Grid *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        4/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** 6 Column Grid *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+        6/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** If you want no Padding use class="padd_none" *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padd_none">
+        3/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** If you want no Top Padding use class="padd_tnone" *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padd_tnone">
+        3/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** If you want no Right Padding use class="padd_rnone" *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padd_rnone">
+        3/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** If you want no Bottom Padding use class="padd_bnone" *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padd_bnone">
+        3/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** If you want no Left Padding use class="padd_lnone" *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padd_lnone">
+        3/12 Content goes here...
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- *************** If you want no margin use class="mar_none" *************** -->
+&lt;section id="section-id" class="section">
+    &lt;div class="row mar_none">
+        Content goes here...
+    &lt;/div>
+&lt;/section>
+&lt;!-- Section End -->
+                </pre>
+
+
+            </div>
+        </section>
+        
+        <section id="style">
+            <div class="row">
+                <h1>Stylesheets</h1>
+                <h3>Files</h3>
+                <p class="max-width">
+                	All CSS are located in the "css" folder of the template. Each CSS File is well commented and easy to use and customize to your own needs. Here's the list of the CSS files:
+                </p>
+                <p class="max-width"> <span class="bold">1. reset.css</span> - Reset default css browser settings is included in main style.css file<br />
+                <span class="bold">2. bootstrap.css</span> - 12 Column Grid settings<br />
+                <span class="bold">3. bootstrap-select.css</span> - Specify Select Droupdown settings<br />
+                <span class="bold">4. bootstrap-toggle.css</span> - Specify Select toggle settings<br />
+                <span class="bold">5. bootstrap-wysihtml5.css</span> - Specify sysihtml5 settings<br />
+                <span class="bold">6. font-awesome.css</span> - font-awesome Style<br />
+                <span class="bold">7. mob_menu.css</span> - Specify Mobile Menu Style<br /><br />
+
+                <span class="bold">8. root.css</span> - Calls all the required stylesheets<br />
+                <span class="bold">9. font-awesome.min.css</span> - Slider font-awesome.min style<br />
+                <span class="bold">10. shortcuts.css</span> - Slider settings style<br />
+                <span class="bold">11. prism.css</span> - pre Code for verious languages style<br />
+                <span class="bold">12. style.css</span> - Main Page style settings<br />
+                <span class="bold">13. responsive.css</span> - Responsive style<br />
+                </p>
+                <h3 class="margin-top">style.css includes:</h3>
+                <pre class="prettyprint">
+/*
+1.  Browser Reset + Font Face
+2.  Globally Applied Styles
+3.  Color Styles
+4.  Table Style
+5.  Header Style
+6.  Typography Style
+*/
+                </pre>
+            </div>
+        </section>
+        
+        <section id="theme-header">
+        	<div class="row">
+                <h1>Header Section</h1>
+                <h2>Header Structure</h2>
+                <p class="max-width">
+                	The Basic Structure contains:<br />
+                    &lt;!-- START TOP --&gt;<br />
+                    &lt;div id=&quot;top&quot; class=&quot;clearfix&quot;&gt;<br />
+                    &lt;!-- Start App Logo --&gt;<br />
+                    &lt;div class=&quot;applogo&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;API &lt;span&gt;Docs&lt;/span&gt;&lt;/a&gt;<br />
+                    &lt;/div&gt;<br />
+                    &lt;!-- End App Logo --&gt;<br />
+                    &lt;!-- Start Sidebar Show Hide Button --&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;sidebar-open-button&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;sidebar-open-button-mobile&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br />
+                    &lt;!-- End Sidebar Show Hide Button --&gt;<br />
+                    &lt;!-- Start Searchbox --&gt;<br />
+                    &lt;form class=&quot;searchform&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;text&quot; class=&quot;searchbox&quot; id=&quot;searchbox&quot; placeholder=&quot;Search&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;searchbutton&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/span&gt;<br />
+                    &lt;/form&gt;<br />
+                    &lt;!-- End Searchbox --&gt;<br />
+                    &lt;!-- Start Top Menu --&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;topmenu&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Files&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Authors&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;dropdown&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;javascript:void(0);&quot; data-toggle=&quot;dropdown&quot; class=&quot;dropdown-toggle&quot;&gt;My Files &lt;span<br />class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;dropdown-menu&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Blog Posts&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+                    &lt;!-- End Top Menu --&gt;<br />
+                    &lt;/div&gt;<br />
+                    &lt;!-- END TOP --&gt;
+                </p>
+           	</div>
+           	<div class="row">
+                <pre class="prettyprint">
+ &lt;!-- START TOP --&gt;
+  &lt;div id=&quot;top&quot; class=&quot;clearfix&quot;&gt;
+
+    &lt;!-- Start App Logo --&gt;
+    &lt;div class=&quot;applogo&quot;&gt;
+      &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;API &lt;span&gt;Docs&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- End App Logo --&gt;
+
+    &lt;!-- Start Sidebar Show Hide Button --&gt;
+    &lt;a href=&quot;javascript:void(0);&quot; class=&quot;sidebar-open-button&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&quot;javascript:void(0);&quot; class=&quot;sidebar-open-button-mobile&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;!-- End Sidebar Show Hide Button --&gt;
+
+    &lt;!-- Start Searchbox --&gt;
+    &lt;form class=&quot;searchform&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;searchbox&quot; id=&quot;searchbox&quot; placeholder=&quot;Search&quot;&gt;
+      &lt;span class=&quot;searchbutton&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/form&gt;
+    &lt;!-- End Searchbox --&gt;
+
+    &lt;!-- Start Top Menu --&gt;
+    &lt;ul class=&quot;topmenu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Files&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Authors&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;javascript:void(0);&quot; data-toggle=&quot;dropdown&quot; class=&quot;dropdown-toggle&quot;&gt;My Files &lt;span
+                class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Blog Posts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;!-- End Top Menu --&gt;
+
+  &lt;/div&gt;
+  &lt;!-- END TOP --&gt;
+				</pre>
+			</div>           	
+        </section>
+        
+        <section id="sidebar">
+        	<div class="row">
+                <h1>Sidebar Section</h1>
+                <h2>Sidebar Structure</h2>
+                <p class="max-width">
+                	The Basic Structure contains:<br />
+                    &lt;!-- START SIDEBAR --&gt;<br>
+                    &lt;div class=&quot;sidebar clearfix&quot;&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;documenter_sidebar&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;scrollholder&quot; class=&quot;scrollholder&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;scroll&quot; class=&quot;scroll&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol id=&quot;documenter_nav&quot; class=&quot;sidebar-panel nav&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class=&quot;current&quot; href=&quot;#documenter-1&quot;&gt;API Reference&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-2&quot;&gt;Authentication &lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-3&quot;&gt;Errors &lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-3-1&quot;&gt;Handling errors&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-1&quot;&gt;Tpography&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-1&quot;&gt;General&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-2&quot;&gt;Headings&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-3&quot;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-4&quot;&gt;Inline Text Elements&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-5&quot;&gt;Abbrevations &amp; Addresses&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-6&quot;&gt;List Types&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-7&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-4-8&quot;&gt;Descriptions&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-5-1&quot;&gt;Tables&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-5-1&quot;&gt;Default Talbe&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-5-2&quot;&gt;examplesd Rows&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-5-3&quot;&gt;Bordered Table&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#documenter-5-4&quot;&gt;Contextual Classes&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;sidebar-panel nav&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;sidetitle&quot;&gt;MORE&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 5&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &lt;/div&gt;<br />
+                    &lt;!-- END SIDEBAR --&gt;
+                </p>
+           	</div>
+           	<div class="row">
+                <pre class="prettyprint">
+&lt;!-- START SIDEBAR --&gt;
+  &lt;div class=&quot;sidebar clearfix&quot;&gt;
+    &lt;div id=&quot;documenter_sidebar&quot;&gt;
+      &lt;div id=&quot;scrollholder&quot; class=&quot;scrollholder&quot;&gt;
+        &lt;div id=&quot;scroll&quot; class=&quot;scroll&quot;&gt;
+          &lt;ol id=&quot;documenter_nav&quot; class=&quot;sidebar-panel nav&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;current&quot; href=&quot;#documenter-1&quot;&gt;API Reference&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-2&quot;&gt;Authentication &lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-3&quot;&gt;Errors &lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-3-1&quot;&gt;Handling errors&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-4-1&quot;&gt;Tpography&lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-1&quot;&gt;General&lt;/a&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-2&quot;&gt;Headings&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-3&quot;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-4&quot;&gt;Inline Text Elements&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-5&quot;&gt;Abbrevations &amp; Addresses&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-6&quot;&gt;List Types&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-7&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-4-8&quot;&gt;Descriptions&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#documenter-5-1&quot;&gt;Tables&lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-1&quot;&gt;Default Talbe&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-2&quot;&gt;examplesd Rows&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-3&quot;&gt;Bordered Table&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#documenter-5-4&quot;&gt;Contextual Classes&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ul class=&quot;sidebar-panel nav&quot;&gt;
+            &lt;li class=&quot;sidetitle&quot;&gt;MORE&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Link 5&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;!-- END SIDEBAR --&gt;
+				</pre>
+			</div>           	
+        </section>
+        
+        <section id="content">
+        	<div class="row">
+                <h1>Content Section</h1>
+                <h2>Content Structure</h2>
+                <p class="max-width">
+                	The Basic Structure contains:<br />
+                    &lt;!-- START CONTENT --&gt;<br />
+                    &lt;div class=&quot;content&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Start Page Header --&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;page-header&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class=&quot;title&quot;&gt;API Reference&lt;/h1&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;discription&quot;&gt; &lt;span class=&quot;active&quot;&gt;Lorem ipsum dolor set amet.&lt;/span&gt; &lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &lt;!-- End Page Header --&gt;<br />
+                    &lt;!-- START CONTAINER --&gt;<br />
+                    &lt;div class=&quot;container-widget&quot;&gt;<br />
+                    &lt;!-- Start Top Stats --&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col-md-12&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;documenter_content&quot; class=&quot;method-area-wrapper&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;documenter-1&quot; class=&quot;method&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-area&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-copy&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-copy-padding&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Lorem Ipsum&lt;/h3&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur  &lt;a href=&quot;#&quot;&gt;ELIT&lt;/a&gt;. Nam in nisi eros. Proin quis ultricies neque. Proin imperdiet leo a leo euismod ultrices. Cras et tempor elit. Duis aliquet volutpat sapien, eget porta tellus laoreet in. Donec sem velit, tincidunt eu sodales vel, varius non libero. Sed nisl mauris, &lt;a href=&quot;#&quot;&gt; facilisis sit amet hendrerit at&lt;/a&gt;, hendrerit vel tortor. Aliquam id massa euismod, ultricies metus nec, convallis urna. In laoreet dapibus ante vitae placerat. Pellentesque mollis nec sapien elementum eu tincidunt. &lt;a href=&quot;#&quot;&gt;SAPIEN&lt;/a&gt; elit placerat Phasellus laoreet vitae, Cras in massa ac mi sodales &lt;a href=&quot;#&quot;&gt;Ligula Fermentum&lt;/a&gt; vestibulum et rutrum odio tincidunt. Nunc id maximus orci. &lt;/p&gt; &lt;p&gt; Vestibulum mollis eros nunc, pretium porta dolor gravida vel. Nullam arcu diam, semper a varius sit amet, interdum vel enim. Duis orci nunc, eleifend vel tellus ut, finibus fermentum erat. Curabitur sagittis justo augue. Phasellus fermentum semper nisi, in consequat lectus tincidunt quis. Maecenas sit amet semper. &lt;/p&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-example&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-example-part&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Lorem Ipsum&lt;/h3&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Curabitur lacinia convallis nibh, &lt;a href=&quot;#&quot;&gt;non cursus augue&lt;/a&gt;. Quisque id sem id lorem porttitor efficitur in quis libero. Nullam turpis ante auctor &lt;a href=&quot;#&quot;&gt;purus sed&lt;/a&gt;. &lt;/p&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-example-part&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;method-example-endpoint&quot;&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;pre class=&quot; language-none&quot;&gt;&lt;code class=&quot; language-none&quot;&gt;https://examples.com&lt;/code&gt;&lt;/pre&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt; .....
+                </p>
+           	</div>
+           	<div class="row">
+                <pre class="prettyprint">
+&lt;!-- START CONTENT --&gt;
+&lt;div class=&quot;content&quot;&gt;
+  &lt;!-- Start Page Header --&gt;
+  &lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1 class=&quot;title&quot;&gt;API Reference&lt;/h1&gt;
+    &lt;div class=&quot;discription&quot;&gt; &lt;span class=&quot;active&quot;&gt;Lorem ipsum dolor set amet.&lt;/span&gt; &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- End Page Header --&gt;
+
+  &lt;!-- START CONTAINER --&gt;
+  &lt;div class=&quot;container-widget&quot;&gt;
+    &lt;!-- Start Top Stats --&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+      &lt;div id=&quot;documenter_content&quot; class=&quot;method-area-wrapper&quot;&gt;
+        &lt;div id=&quot;documenter-1&quot; class=&quot;method&quot;&gt;
+          &lt;div class=&quot;method-area&quot;&gt;
+            &lt;div class=&quot;method-copy&quot;&gt;
+              &lt;div class=&quot;method-copy-padding&quot;&gt;
+                &lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+                &lt;p&gt; Lorem ipsum dolor sit amet, consectetur &lt;a href=&quot;#&quot;&gt;ELIT&lt;/a&gt;. Nam in nisi
+                  eros. Proin quis ultricies neque. Proin imperdiet leo a leo euismod
+                  ultrices. Cras et tempor elit. Duis aliquet volutpat sapien, eget porta tellus
+                  laoreet in. Donec sem velit, tincidunt eu sodales vel, varius non libero.
+                  Sed nisl mauris,&lt;a href=&quot;#&quot;&gt; facilisis sit amet hendrerit at&lt;/a&gt;, hendrerit
+                  vel tortor. Aliquam id massa euismod, ultricies metus nec, convallis urna. In
+                  laoreet dapibus ante vitae placerat. Pellentesque mollis nec sapien
+                  elementum eu tincidunt. &lt;a href=&quot;#&quot;&gt;SAPIEN&lt;/a&gt; elit placerat Phasellus laoreet vitae,
+                  Cras in massa ac mi sodales &lt;a href=&quot;#&quot;&gt;Ligula Fermentum&lt;/a&gt; vestibulum
+                  et rutrum odio tincidunt. Nunc id maximus orci. &lt;/p&gt;
+                &lt;p&gt; Vestibulum mollis eros nunc, pretium porta dolor gravida vel. Nullam arcu diam,
+                  semper a varius sit amet, interdum vel enim. Duis orci nunc, eleifend vel tellus
+                  ut, finibus fermentum erat. Curabitur sagittis justo augue. Phasellus fermentum
+                  semper nisi, in consequat lectus tincidunt quis. Maecenas sit amet semper. &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;method-example&quot;&gt;
+              &lt;div class=&quot;method-example-part&quot;&gt;
+                &lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+                &lt;p&gt;Curabitur lacinia convallis nibh, &lt;a href=&quot;#&quot;&gt;non cursus augue&lt;/a&gt;. Quisque id
+                  sem id lorem porttitor efficitur in quis libero. Nullam turpis ante auctor &lt;a href=&quot;#&quot;&gt;purus sed&lt;/a&gt;. &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;method-example-part&quot;&gt;
+                &lt;div class=&quot;method-example-endpoint&quot;&gt;
+                  &lt;pre class=&quot; language-none&quot;&gt;&lt;code
+                                                class=&quot; language-none&quot;&gt;https://examples.com&lt;/code&gt;&lt;/pre&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;.....
+				</pre>
+			</div>           	
+        </section>
+        <section id="code">
+            <div class="row">
+                <h1>code Section</h1>
+                <h2>code Structure</h2>
+                <p class="max-width">
+                    The Basic Structure contains:<br />
+                    &lt;pre class=&quot; language-php&quot;&gt;&lt;code<br />
+                    class=&quot; language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; <br />
+                    class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Use examples's library to make requests...&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token package&quot;&gt;examples<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Card&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Since it's a decline, \examples\Error\Card will be caught&lt;/span&gt;<br />
+                    &lt;span class=&quot;token variable&quot;&gt;$body&lt;/span&gt; <br />
+                    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;<br />
+                    &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getJsonBody&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt; <br />
+                    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$body&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;<br />
+                    &lt;span class=&quot;token string&quot;&gt;'error'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Status is:'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;<br />
+                    &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getHttpStatus&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Type is:'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;<br />
+                    &lt;span class=&quot;token string&quot;&gt;'type'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Code is:'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;<br />
+                    &lt;span class=&quot;token string&quot;&gt;'code'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// param is '' in this case&lt;/span&gt;<br />
+                    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Param is:'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;<br />
+                    &lt;span class=&quot;token string&quot;&gt;'param'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'Message is:'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;'message'&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; <br />
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;RateLimit&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Too many requests made to the API too quickly&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;InvalidRequest&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Invalid parameters were supplied to examples's API&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Authentication&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Authentication with examples's API failed&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// (maybe you changed API keys recently)&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;ApiConnection&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Network communication with examples failed&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br />
+                    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Base&lt;/span&gt; <br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Display a very generic error to the user, and maybe send&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// yourself an email&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; <br />
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;<br>
+                    &lt;span class=&quot;token class-name&quot;&gt;Exception&lt;/span&gt;<br />
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; <br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;<br />
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Something else happened, completely unrelated to examples&lt;/span&gt;<br />
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;<br />
+                </p>
+            </div>
+            <div class="row">
+                <pre class="prettyprint">
+&lt;pre class=&quot; language-php&quot;&gt;&lt;code
+                        class=&quot; language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Use examples's library to make requests...&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;\&lt;span class=&quot;token package&quot;&gt;examples
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Card&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Since it's a decline, \examples\Error\Card will be caught&lt;/span&gt;
+                  &lt;span class=&quot;token variable&quot;&gt;$body&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;token function&quot;&gt;getJsonBody&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$body&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'error'&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'Status is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;token function&quot;&gt;getHttpStatus&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'Type is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'type'&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'Code is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'code'&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// param is '' in this case&lt;/span&gt;
+                  &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'Param is:'&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'param'&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'Message is:'&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$err&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;'message'&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;\n&quot;&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;RateLimit&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Too many requests made to the API too quickly&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;InvalidRequest&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot;
+                        spellcheck=&quot;true&quot;&gt;// Invalid parameters were supplied to examples's API&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Authentication&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Authentication with examples's API failed&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// (maybe you changed API keys recently)&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;ApiConnection&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Network communication with examples failed&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;examples
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Error
+                    &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Base&lt;/span&gt;
+                    &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Display a very generic error to the user, and maybe send&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// yourself an email&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token class-name&quot;&gt;Exception&lt;/span&gt;
+                  &lt;span class=&quot;token variable&quot;&gt;$e&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Something else happened, completely unrelated to examples&lt;/span&gt;
+                  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+				</pre>
+            </div>
+        </section>
+        
+        <section id="javascript">
+            <div class="row">
+                <h1>Javascript</h1>
+                <h3>Plugins</h3>
+                <p class="max-width"> All JavaScript / jQuery plugins are located in the "scripts" folder of the template. You do not need to edit these items. </p>
+                <p class="max-width">
+                    <span class="bold">1. jquery-1.6.4.js</span> - jQuery<br />
+                    <span class="bold">2. jquery.min.js</span> - jQuery<br />
+                    <span class="bold">3. bootstrap.min.js</span> - Bootstrap v3.3.2<br />
+                    <span class="bold">4. plugins.js</span> - Jquery Plugins<br />
+                    <span class="bold">5. datatables.min.js</span> - Data Tables<br />
+                    <span class="bold">6. jquery-ui.min.js</span> - jQuery UI<br />
+                    <span class="bold">7. moment.min.js</span> - Moment <br />
+                    <span class="bold">8. prism.js</span> - Prism UI<br />
+                    <span class="bold">9. jquery.scrollto-1.4.2-min.js</span> - jQuery Scroll<br />
+                	<span class="bold">10. jquery.easting.js</span> - jQueary easting<br />
+                    <span class="bold">11. script.js</span> - custom <br />
+                    <span class="bold">12. scroll.js</span> - Scroll<br />
+                    <span class="bold">13. common.js</span> - common<br />
+                    <span class="bold">14. jquery.mobile-menu.min.js</span> - Mobile Menu<br />
+                </p>
+                <p class="max-width">Once again, thank you for purchasing this Theme. As mentioned at the beginning of this documentation, we would be glad to help you if you have any questions related to this Theme.</p>
+                <p class="max-width">If you are satisfied with "API Docs HTML template" please go to your downloads section on ThemeForest.net and rate API Docs HTML with 5 stars.</p>
+                <p class="max-width">Hope that you will enjoy in API Docs HTML Responsive template as much as I've enjoyed designing this template</p>
+            </div>
+        </section>       
+        
+    </div>
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script>
+    <script type="text/javascript" src="js/scrollReveal.js"></script>
+    <script type="text/javascript" src="js/js-functions.js"></script>
+    
+</body>
+</html>
